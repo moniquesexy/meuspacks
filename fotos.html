@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Fotos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('fotos/8.jpg'); /* Imagem de fundo */
+            background-size: cover; /* Cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem de fundo */
+            background-attachment: fixed; /* Fixar a imagem de fundo */
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente para o cabeçalho */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .photo-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .photo-container {
+                max-width: 90%;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <a href="index.html">&#8592; Voltar para a Página Inicial</a>
+    </header>
+
+    <main>
+        <div class="photo-container">
+            <img src="fotos/1.jpg" alt="Foto 1">
+        </div>
+        <div class="photo-container">
+            <img src="fotos/2.jpg" alt="Foto 2">
+        </div>
+        <div class="photo-container">
+            <img src="fotos/3.jpg" alt="Foto 3">
+        </div>
+        <div class="photo-container">
+            <img src="fotos/4.jpg" alt="Foto 4">
+        </div>
+        <div class="photo-container">
+            <img src="fotos/5.jpg" alt="Foto 5">
+        </div>
+        <div class="photo-container">
+            <img src="fotos/6.jpg" alt="Foto 6">
+        </div>
+        <div class="photo-container">
+            <img src="fotos/7.jpg" alt="Foto 7">
+        </div>
+        <div class="photo-container">
+            <img src="fotos/8.jpg" alt="Foto 8">
+        </div>
+        <div class="photo-container">
+            <img src="fotos/9.jpg" alt="Foto 9">
+        </div>
+        <div class="photo-container">
+            <img src="fotos/10.jpg" alt="Foto 10">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Website. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

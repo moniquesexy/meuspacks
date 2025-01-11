@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   background-color: #a86bc0 ;
+   background-image: url('pexels-rostislav-10458835.jpg');
+}
+
+header {
+    background-color: #000000;
+    color: rgb(216, 198, 198);
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #b3b3b3;
+    border-radius: 5px;
+}
+
+.main-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ca9090;
+    border: 1px solid #1a1919;
+    text-align: center;
+}
+
+footer main {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+main center {
+    margin: 9px;
+    padding: 180px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    text-align: center;
+    position: relative;
+    background-image: url('pexels-shvets-production-9774894.jpg');
+    background-size: cover;
+    background-position: right;
+    color: rgb(0, 0, 0); /* Adjust text color for better readability over the background image */
+}
+
+main-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    pointer-events: none;
+}
+
+.image-container {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 9px;
+    transition: transform 0.5s;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.search-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #818381;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.search-container button:hover {
+    background-color: #333;
+}
+
